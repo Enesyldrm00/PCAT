@@ -1,0 +1,32 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAT Photo App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enesyldrm00/PCAT.git"
+  },
+  "keywords": [
+    "app",
+    "photo"
+  ],
+  "author": "Muhammed Enes Yıldırım",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enesyldrm00/PCAT/issues"
+  },
+  "homepage": "https://github.com/Enesyldrm00/PCAT#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "prettier": "3.8.0"
+  },
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}
