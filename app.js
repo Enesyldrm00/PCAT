@@ -12,7 +12,7 @@ const app = express();
 
 // Mongoose Connect
 mongoose
-  .connect('mongodb://127.0.0.1:27017/pcat-test-db')
+  .connect('mongodb+srv://muhammedenesyildirim57_db_user:CwnsUm4wMT95_DK@cluster0.udgci2a.mongodb.net/?appName=Cluster0')
   .then(() => console.log('DB connected'))
   .catch((err) => console.log(err));
 
@@ -68,8 +68,8 @@ app.delete('/photos/:id', async (req, res) => {
 });
 
 //port
-const port = 3000;
+const PORT = process.env.PORT || 5000;
 
-app.listen(port, () => {
-  console.log('sunucu çaalıştı');
+app.listen(PORT, () => {
+  console.log("Server:", PORT);
 });
